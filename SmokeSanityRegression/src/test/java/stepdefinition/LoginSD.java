@@ -2,7 +2,7 @@ package stepdefinition;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
@@ -16,7 +16,7 @@ public class LoginSD {
 	@Given("user is on application page")
 	public void user_is_on_application_page() {
 
-		driver = new EdgeDriver();
+		driver = new ChromeDriver();
 		driver.get("https://katalon-demo-cura.herokuapp.com/");
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
